@@ -1,0 +1,12 @@
+elloa A6.B7.C8.F9 192.168.11.0 elloa@github.com push dominar_o_mundo e25df22a1b41ec5248f5af0d8fb1c2dd
+
+3ll04 A6.B7.C8.FF 266.168.11.0 3lloa@github.com ploft exemplo-projeto-errado e25df22a1b41ec5248f5af0d8fb1c2dj // tem que dar falso
+
+jessicctavares A3.67.12.C0 208.183.34.89 jessicctavares@outlook.com.br push ftc_projeto fbec6dc5c0d5f894e4410ec0cd8645a1
+
+wallace2017 E2.56.32.A8 158.208.189.45 wallgen@hotmail.com pull zooctec_tcc cdc9686d54357c334748d80ea05c6723
+
+Let1c14 10.A4.6B.54 126.1.12.34 lbp.7@outlook.com pull biomassa_da_banana 57dad741117fa87011e8d54796133f0e
+
+
+elloa A6.B7.C8.F9.A6.B7.C8.F9 192.168.11.0 elloa@github.com push dominar_o_mundo e25df22a1b41ec5248f5af0d8fb1c2dd
