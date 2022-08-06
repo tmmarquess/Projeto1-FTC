@@ -1,4 +1,4 @@
-elloa A6.B7.C8.F9 192.168.11.0 elloa@github.com push dominar_o_mundo e25df22a1b41ec5248f5af0d8fb1c2dd
+elloa A6.B7.C8.F9 192.168.11.0 elloa@github.com pushj dominar_o_mundo e25df22a1b41ec5248f5af0d8fb1c2dd
 
 3ll04 A6.B7.C8.FF 266.168.11.0 3lloa@github.com ploft exemplo-projeto-errado e25df22a1b41ec5248f5af0d8fb1c2dj // tem que dar falso
 
@@ -10,3 +10,6 @@ Let1c14 10.A4.6B.54 126.1.12.34 lbp.7@outlook.com pull biomassa_da_banana 57dad7
 
 
 elloa A6.B7.C8.F9.A6.B7.C8.F9 192.168.11.0 elloa@github.com push dominar_o_mundo e25df22a1b41ec5248f5af0d8fb1c2dd
+
+
+elloa A6.B7.C8.F9 192.168.11.0 elloa@github.com push dominar_o_mundo e25df22a1b41ec5248f5af0d8fb1c2dd

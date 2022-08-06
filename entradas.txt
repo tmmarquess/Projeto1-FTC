@@ -1,0 +1,78 @@
+                                              ACEITA
+
+wallace2017 E2.56.32.A8 158.208.189.45 wallgen@hotmail.com pull zooctec_tcc cdc9686d54357c334748d80ea05c6723
+Let1c14 10.A4.6B.54 126.1.12.34 lbp.7@outlook.com pull biomassa_da_banana 57dad741117fa87011e8d54796133f0e
+jessicctavares A3.67.12.C0 208.183.34.89 jessicctavares@outlook.com.br push ftc_projeto fbec6dc5c0d5f894e4410ec0cd8645a1
+elloa A6.B7.C8.F5 192.168.11.0 elloa@github.com push dominar e25df22a1b41ec5248f5af0d8fb1c2dd
+ell04 A6.B7.C8.F9 192.168.11.0 elloa@github.com push dominar_o_mundo e25df22a1b41ec5248f5af0d8fb1c2dd
+m3l1nn3 03.A5.2B.F8 255.168.11.0 menina.sla@gmail.com.br push projeto_de_ftc e25df22a1b41ec5248f5af0d8fb1c2dj
+m3l1nn3 A6.B7.F1.CF 1.0.0.0 melinnediniz@gmail.com.br stash projeto__ftc e25df22a1b41ec5248f5af0d8fb1c2dj
+m3l1nn3 A6.B7.F2.C1 255.168.11.0 melinnediniz@gmail.com.br fork projeto_ftc e25df22a1b41ec5248f5af0d8fb1c2dj
+m3l1nn3 A6.B7.F4.C5 255.1.1.0 melinnediniz@gmail.com.br pop projeto_ftc e25df22a1b41ec5248f5af0d8fb1c2dj
+m3l1nn3 14.35.28.92 255.168.11.0 melinnediniz@gmail.com.br pull projeto_ftc e25df22a1b41ec5248f5af0d8fb1c2dj
+m3l1nn3 AF.BW.FH.CJ 1.1.1.0 melinnediniz@gmail.com.br pop projeto_ftc e25df22a1b41ec5248f5af0d8fb1c2dj
+m3l1nn3 A6.B7.F4.C5 1.0.0.0 melinnediniz@gmail.com.br pop projeto_ftc e25df22a1b41ec5248f5af0d8fb1c2dj
+
+
+
+
+
+
+                                              REJEITA
+
+SENHAS:
+
+elloa AA.B7.C8.FF 255.165.11.0 elloa@github.com push exemplo_projeto e25df22a1b41ec5248f5af0d8fb1c2dj
+
+elloa A5.B7.C8.F3.75 255.165.11.0 elloa@github.com push exemplo_projeto e25df22a1b41ec5248f5af0d8fb1c2dj
+
+elloa A6.BB.C8.F9 192.168.11.0 elloa@github.com push dominar_o_mundo e25df22a1b41ec5248f5af0d8fb1c2dd
+
+elloa A6.B7C8.F9 192.168.11.0 elloa@github.com push dominar_o_mundo e25df22a1b41ec5248f5af0d8fb1c2dd
+
+-------------------------------------------------------------------------------------------------------
+
+E-MAILS:
+
+elloa A6.B7.C8.F9 192.168.11.0 _lloa@github.com push dominar_o_mundo e25df22a1b41ec5248f5af0d8fb1c2dd
+elloa A6.B7.C8.F9 192.168.11.0 3lloa@github.com push dominar_o_mundo e25df22a1b41ec5248f5af0d8fb1c2dd
+elloa A6.B7.C8.F9 192.168.11.0 elloa@ github.com push dominar_o_mundo e25df22a1b41ec5248f5af0d8fb1c2dd
+elloa A6.B7.C8.F9 192.168.11.0 ell@oa@github.com push dominar_o_mundo e25df22a1b41ec5248f5af0d8fb1c2dd
+
+-------------------------------------------------------------------------------------------------------
+AUTOR:
+
+3lloa A6.B7.C8.F9 192.168.11.0 elloa@github.com push dominar_o_mundo e25df22a1b41ec5248f5af0d8fb1c2dd
+3ll04 A6.B7.C8.F9 192.168.11.0 elloa@github.com push dominar_o_mundo e25df22a1b41ec5248f5af0d8fb1c2dd
+el104 A6.B7.C8.F9 192.168.11.0 elloa@ github.com push dominar_o_mundo e25df22a1b41ec5248f5af0d8fb1c2dd
+
+-------------------------------------------------------------------------------------------------------
+IPS:
+
+m3l1nn3 A6.B7.F4.C5 0.1.1.0 melinnediniz@gmail.com.br pop projeto_ftc e25df22a1b41ec5248f5af0d8fb1c2dj
+m3l1nn3 A6.B7.F4.C5 001.1.1.0 melinnediniz@gmail.com.br pop projeto_ftc e25df22a1b41ec5248f5af0d8fb1c2dj
+m3l1nn3 A6.B7.F4.C5 1.01.1.0 melinnediniz@gmail.com.br pop projeto_ftc e25df22a1b41ec5248f5af0d8fb1c2dj
+
+
+-------------------------------------------------------------------------------------------------------
+HASHS:
+elloa A6.B7.C8.F5 192.168.11.0 elloa@github.com push dominar e25df22a1b41ec5248f5af0d8fb1c2d
+elloa A6.B7.C8.F5 192.168.11.0 elloa@github.com push dominar e25df22a1b41ec5248f5af0d8fb1c2dd0
+elloa A6.B7.C8.F5 192.168.11.0 elloa@github.com push dominar e25df22a1b41ec5248f5af0d8fb1cddd
+
+
+
+-------------------------------------------------------------------------------------------------------
+REPOSITORIOS:
+
+elloa A6.B7.C8.F5 192.168.11.0 elloa@github.com push dominar.o.mundo e25df22a1b41ec5248f5af0d8fb1cddd
+elloa A6.B7.C8.F5 192.168.11.0 elloa@github.com push dominar-o-mundo e25df22a1b41ec5248f5af0d8fb1cddd
+
+
+-------------------------------------------------------------------------------------------------------
+TRANSAÇÕES:
+
+m3l1nn3 A6.B7.F4.C1 255.168.11.0 melinnediniz@gmail.com.br pusho projeto_ftc e25df22a1b41Ac5248f5af0d8fb1c2dj
+
+m3l1nn3 A6.B7.F4.C1 255.168.11.0 melinnediniz@gmail.com.br pus projeto_ftc e25df22a1b41c5248f5af0d8fb1c2dj
+m3l1nn3 A6.B7.F4.C1 255.168.11.0 melinnediniz@gmail.com.br plof projeto_ftc e25df22a1b41c5248f5af0d8fb1c2dj
