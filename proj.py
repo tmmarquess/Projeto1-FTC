@@ -100,7 +100,11 @@ def valida_hash(hash: str):  # acho que ta ok
         return False
 
 
-valores = input().split()
+try:
+    valores = input().split()
+except EOFError:
+    print(False)
+    exit()
 
 if len(valores) != 7:
     print(False)
