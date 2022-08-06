@@ -8,7 +8,7 @@ class bcolors:
 
 repositorios = ["zooctec_tcc","biomassa_da_banana" ,"ftc_projeto" ,"dominar" ,"dominar_o_mundo" ,"projeto_de_ftc" ,"projeto__ftc" ,"projeto_ftc","dominar.o.mundo" ,"dominar-o-mundo", "dominar_o_mundo_", "a", 'aa']
 
-regex_geral = re.compile(r"^[a-z]+(_?[a-z0-9])*$")
+regex_geral = re.compile(r"^[a-z]+(_*[a-z0-9])*$")
 
 for repo in repositorios:
     resposta = regex_geral.search(repo)

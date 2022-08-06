@@ -100,21 +100,47 @@ def valida_hash(hash: str):  # acho que ta ok
         return False
 
 
-valores = input().split()
+entradas = [
+    "wallace2017 E2.56.32.A8 158.208.189.45 wallgen@hotmail.com pull zooctec_tcc cdc9686d54357c334748d80ea05c6723",
+    "Let1c14 10.A4.6B.54 126.1.12.34 lbp.7@outlook.com pull biomassa_da_banana 57dad741117fa87011e8d54796133f0e",
+    "jessicctavares A3.67.12.C0 208.183.34.89 jessicctavares@outlook.com.br push ftc_projeto fbec6dc5c0d5f894e4410ec0cd8645a1",
+    "elloa A6.B7.C8.F5 192.168.11.0 elloa@github.com push dominar e25df22a1b41ec5248f5af0d8fb1c2dd",
+    "ell04 A6.B7.C8.F9 192.168.11.0 elloa@github.com push dominar_o_mundo e25df22a1b41ec5248f5af0d8fb1c2dd",
+    "m3l1nn3 03.A5.2B.F8 254.168.11.0 menina.sla@gmail.com.br push projeto_de_ftc cdc9686d54357c334748d80ea05c6723",
+    "m3l1nn3 A6.B7.F1.C8 1.0.0.0 melinnediniz@gmail.com.br stash projeto__ftc cdc9686d54357c334748d80ea05c6723",
+    "m3l1nn3 A6.B7.F2.C1 254.168.11.0 melinnediniz@gmail.com.br fork projeto_ftc cdc9686d54357c334748d80ea05c6723",
+    "m3l1nn3 A6.B7.F4.C5 254.1.1.0 melinnediniz@gmail.com.br pop projeto_ftc cdc9686d54357c334748d80ea05c6723",
+    "m3l1nn3 14.35.28.92 254.168.11.0 melinnediniz@gmail.com.br pull projeto_ftc cdc9686d54357c334748d80ea05c6723",
+    "m3l1nn3 A1.12.F5.C7 1.1.1.0 melinnediniz@gmail.com.br pop projeto_ftc cdc9686d54357c334748d80ea05c6723",
+    "m3l1nn3 A6.B7.F4.C5 1.0.0.0 melinnediniz@gmail.com.br pop projeto_ftc cdc9686d54357c334748d80ea05c6723",
+]
+i = 1
+for entrada in entradas:
+    valores = entrada.split()
 
-if len(valores) != 7:
-    print(False)
+    if len(valores) != 7:
+        print(False)
 
-validacoes = []
-validacoes.append(valida_autor(valores[0]))
-validacoes.append(valida_senha(valores[1]))
-validacoes.append(valida_ip(valores[2]))
-validacoes.append(valida_email(valores[3]))
-validacoes.append(valida_transacao(valores[4]))
-validacoes.append(valida_repositorio(valores[5]))
-validacoes.append(valida_hash(valores[6]))
+    # print(f"Caso {i}:")
+    i += 1
 
-if False in validacoes:
-    print(False)
-else:
-    print(True)
+    validacoes = []
+    validacoes.append(valida_autor(valores[0]))
+    # print(f"Autor: {validacoes[0]}")
+    validacoes.append(valida_senha(valores[1]))
+    # print(f"senha: {validacoes[1]}")
+    validacoes.append(valida_ip(valores[2]))
+    # print(f"ip: {validacoes[2]}")
+    validacoes.append(valida_email(valores[3]))
+    # print(f"email: {validacoes[3]}")
+    validacoes.append(valida_transacao(valores[4]))
+    # print(f"transacao: {validacoes[4]}")
+    validacoes.append(valida_repositorio(valores[5]))
+    # print(f"repo: {validacoes[5]}")
+    validacoes.append(valida_hash(valores[6]))
+    # print(f"hash: {validacoes[6]}")
+
+    if False in validacoes:
+        print(False)
+    else:
+        print(True)
