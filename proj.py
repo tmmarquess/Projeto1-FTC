@@ -51,8 +51,25 @@ def valida_senha(senha: str):  # acho que ta ok
         return True
 
 
-def valida_ip(ip: str):  # faltando
-    regex = re.compile(r"")
+def valida_ip(ip: str):  # acho que ta ok
+    regex_geral = re.compile(r"^[12]?[0-9]{0,2}\.[0-2]?[0-9]{0,2}\.[0-2]?[0-9]{0,2}\.[0-2]?[0-9]{0,2}$")
+    regex_problemas = re.compile(r"^0|^127|^255|255$|0$")
+
+    respostas = []
+    if regex_geral.search(ip) != None:
+        respostas.append(True)
+    else:
+        respostas.append(False)
+
+    if regex_problemas.search(ip) == None:
+        respostas.append(True)
+    else:
+        respostas.append(False)
+
+    if False in respostas:
+        return False
+    else:
+        return True
 
 
 def valida_email(email: str):  # faltando
@@ -89,7 +106,7 @@ if len(valores) != 7:
 validacoes = []
 validacoes.append(valida_autor(valores[0]))
 validacoes.append(valida_senha(valores[1]))
-# validacoes.append(valida_ip(valores[2]))
+validacoes.append(valida_ip(valores[2]))
 # validacoes.append(valida_email(valores[3]))
 validacoes.append(valida_transacao(valores[4]))
 validacoes.append(valida_repositorio(valores[5]))
