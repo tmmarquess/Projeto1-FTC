@@ -54,6 +54,11 @@ def valida_senha(senha: str):  # acho que ta ok
 def valida_ip(ip: str):  # acho que ta ok
     regex_geral = re.compile(r"^[12]?[0-9]{0,2}\.[0-2]?[0-9]{0,2}\.[0-2]?[0-9]{0,2}\.[0-2]?[0-9]{0,2}$")
     regex_problemas = re.compile(r"^0|^127|^255|255$")
+    regex_repeticao = re.compile(r"0[0-9][0-9]|0[0-9]")
+
+    for part in ip.split("."):
+        if int(part) > 255:
+            return False
 
     respostas = []
     if regex_geral.search(ip) != None:
@@ -62,6 +67,11 @@ def valida_ip(ip: str):  # acho que ta ok
         respostas.append(False)
 
     if regex_problemas.search(ip) == None:
+        respostas.append(True)
+    else:
+        respostas.append(False)
+
+    if regex_repeticao.search(ip) == None:
         respostas.append(True)
     else:
         respostas.append(False)
@@ -114,6 +124,43 @@ entradas = [
     "m3l1nn3 A1.12.F5.C7 1.1.1.0 melinnediniz@gmail.com.br pop projeto_ftc cdc9686d54357c334748d80ea05c6723",
     "m3l1nn3 A6.B7.F4.C5 1.0.0.0 melinnediniz@gmail.com.br pop projeto_ftc cdc9686d54357c334748d80ea05c6723",
 ]
+
+entradas = [
+'elloa AA.B7.C8.FF 255.165.11.0 elloa@github.com push exemplo_projeto e25df22a1b41ec5248f5af0d8fb1c2da',         # 0
+'elloa A5.B7.C8.F3.75 255.165.11.0 elloa@github.com push exemplo_projeto e25df22a1b41ec5248f5af0d8fb1c2da',      # 1
+'elloa A6.BB.C8.F9 192.168.11.0 elloa@github.com push dominar_o_mundo e25df22a1b41ec5248f5af0d8fb1c2dd',         # 2
+'elloa A6.B7C8.F9 192.168.11.0 elloa@github.com push dominar_o_mundo e25df22a1b41ec5248f5af0d8fb1c2dd',          # 3
+'elloa A6.B7.C8.F9 192.168.11.0 _lloa@github.com push dominar_o_mundo e25df22a1b41ec5248f5af0d8fb1c2dd',         # 4
+'elloa A6.B7.C8.F9 192.168.11.0 3lloa@github.com push dominar_o_mundo e25df22a1b41ec5248f5af0d8fb1c2dd',         # 5
+'elloa A6.B7.C8.F9 192.168.11.0 elloa@ github.com push dominar_o_mundo e25df22a1b41ec5248f5af0d8fb1c2dd',        # 6
+'elloa A6.B7.C8.F9 192.168.11.0 ell@oa@github.com push dominar_o_mundo e25df22a1b41ec5248f5af0d8fb1c2dd',        # 7
+'elloa A6.B7.C8.F9 192.168.11.0 elloa@github.com. push dominar_o_mundo e25df22a1b41ec5248f5af0d8fb1c2dd',        # 8
+'3lloa A6.B7.C8.F9 192.168.11.0 elloa@github.com push dominar_o_mundo e25df22a1b41ec5248f5af0d8fb1c2dd',         # 9
+'3ll04 A6.B7.C8.F9 192.168.11.0 elloa@github.com push dominar_o_mundo e25df22a1b41ec5248f5af0d8fb1c2dd',         #10
+'el104 A6.B7.C8.F9 192.168.11.0 elloa@ github.com push dominar_o_mundo e25df22a1b41ec5248f5af0d8fb1c2dd',        #11
+'el1_04 A6.B7.C8.F9 192.168.11.0 elloa@ github.com push dominar_o_mundo e25df22a1b41ec5248f5af0d8fb1c2dd',       #12
+'m3l1nn3 A6.B7.F4.C5 0.1.1.0 melinnediniz@gmail.com.br pop projeto_ftc e25df22a1b41ec5248f5af0d8fb1c2da',        #13
+'m3l1nn3 A6.B7.F4.C5 126.01.1.1 melinnediniz@gmail.com.br pop projeto_ftc e25df22a1b41ec5248f5af0d8fb1c2da',     #14
+'m3l1nn3 A6.B7.F4.C5 001.1.1.0 melinnediniz@gmail.com.br pop projeto_ftc e25df22a1b41ec5248f5af0d8fb1c2da',      #15
+'m3l1nn3 A6.B7.F4.C5 1.01.1.0 melinnediniz@gmail.com.br pop projeto_ftc e25df22a1b41ec5248f5af0d8fb1c2da',       #16
+'elloa A6.B7.C8.F5 192.168.11.0 elloa@github.com push dominar e25df22a1b41ec5248f5af0d8fb1c2d',                  #17
+'elloa A6.B7.C8.F5 192.168.11.0 elloa@github.com push dominar e25df22a1b41ec5248f5af0d8fb1c2dd0',                #18
+'elloa A6.B7.C8.F5 192.168.11.0 elloa@github.com. push dominar e25df22a1b41ec5248f5af0d8fb1cddd',                #19
+'elloa A6.B7.C8.F5 192.168.11.0 elloa@github.com push dominar.o.mundo e25df22a1b41ec5248f5af0d8fb1cddd',         #20
+'elloa A6.B7.C8.F5 192.168.11.0 elloa@github.com push dominar-o-mundo e25df22a1b41ec5248f5af0d8fb1cddd',         #21
+'elloa A6.B7.C8.F5 192.168.11.0 elloa@github.com push .dominar.o.mundo e25df22a1b41ec5248f5af0d8fb1cddd',        #22
+'elloa A6.B7.C8.F5 192.168.11.0 elloa@github.com push dominar_o_mundo. e25df22a1b41ec5248f5af0d8fb1cddd',        #23
+'elloa A6.B7.C8.F5 192.168.11.0 elloa@github.com push dOminar_o_mundo. e25df22a1b41ec5248f5af0d8fb1cddd',        #24
+'m3l1nn3 A6.B7.F4.C1 255.168.11.0 melinnediniz@gmail.com.br pusho projeto_ftc e25df22a1b41Ac5248f5af0d8fb1c2da', #25
+'m3l1nn3 A6.B7.F4.C1 255.168.11.0 melinnediniz@gmail.com.br pus projeto_ftc e25df22a1b41c5248f5af0d8fb1c2da1',   #26
+'m3l1nn3 A6.B7.F4.C1 255.168.11.0 melinnediniz@gmail.com.br plof projeto_ftc e25df22a1b41c5248f5af0d8fb1c2da1',  #27
+'m3l1nn3 A6.B7.F4.C1 256.168.11.0 melinnediniz@gmail.com.br push projeto_ftc e25df22a1b41c5248f5af0d8fb1c2da1',  #28
+'m3l1nn3 A6.B7.F4.C1 255.256.11.0 melinnediniz@gmail.com.br push projeto_ftc e25df22a1b41c5248f5af0d8fb1c2da1',  #29
+'m3l1nn3 A6.B7.F4.C1 255.255.11.0 _melinnediniz@gmail.com.br push projeto_ftc e25df22a1b41c5248f5af0d8fb1c2da1', #30
+'m3l1nn3 A6.B7.F4.C1. 255.255.11.0 melinnediniz@gmail.com.br push projeto_ftc e25df22a1b41c5248f5af0d8fb1c2da1', #31
+'m3l1nn3 A6.B7.F4.C1 255.255.11.0 melinnediniz@gmail.com.br push projeto_ftc e25df22a1b41c5248f5af0d8fb1c2daj'   #32
+]
+
 i = 1
 for entrada in entradas:
     valores = entrada.split()
@@ -143,4 +190,5 @@ for entrada in entradas:
     if False in validacoes:
         print(False)
     else:
+        print(valores)
         print(True)
